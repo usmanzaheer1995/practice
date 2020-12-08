@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <title>TrainAway Crypto Test Page</title>
+</head>
+
+<body>
+  <h1>Test Page</h1>
+  <script type="text/javascript">
+    const query_params = {
+      userEmail: "usman@email.com",
+      brandFullName: "Iconic Health Club",
+      homeClubName: "Iconic Health Club",
+      userFullName: "usman",
+    };
+
+    const privateKey =
+      `-----BEGIN PRIVATE KEY-----
+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
+OMSNP1J2rDZw9I5hByw897I62qn5pOw=1
+-----END PRIVATE KEY-----`;
+
+    function objToQueryString(obj) {
+      let query_string = "";
+      const obj_keys = Object.keys(obj);
+      const length = obj_keys.length;
+      obj_keys.forEach((item, index) => {
+
+        query_string += `${item}=${encodeURIComponent(obj[item])}`;
+        if (index + 1 < length) {
+          query_string += "&";
+        }
+      });
+      return query_string;
+    }
+
+    function importRsaKey(pem) {
+      let binStr = pemToBinary(pem);
+      let keyBuf = str2ab(binStr);
+
+      return window.crypto.subtle.importKey(
+        "pkcs8",
+        keyBuf,
+        {
+          name: "RSA-OAEP",
+          hash: {name: "SHA-256"},
+        },
+        false,
+        ["decrypt"]
+      );
+    }
+
+    async function importPrivateKeyAndDecrypt(key, data) {
+      // A ciphertext produced with the first code
+      try {
+        const priv = await importPrivateKey(key);
+        const decrypted = await decryptRSA(priv, str2ab(window.atob(data)));
+        console.log(decrypted);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+
+    async function importPrivateKey(pkcs8Pem) {
+      return await window.crypto.subtle.importKey(
+          "pkcs8",
+          getPkcs8Der(pkcs8Pem),
+          {
+              name: "RSA-OAEP",
+              hash: "SHA-256",
+          },
+          false,
+          ["decrypt"]
+      );
+    }
+
+    async function decryptRSA(key, ciphertext) {
+      let decrypted = await window.crypto.subtle.decrypt(
+        {
+          name: "RSA-OAEP"
+        },
+        key,
+        ciphertext
+      );
+      return new TextDecoder().decode(decrypted);
+    }
+
+    function getPkcs8Der(pkcs8Pem){
+      // const pemHeader = "-----BEGIN PRIVATE KEY-----";
+      // const pemFooter = "-----END PRIVATE KEY-----";
+      // var pemContents = pkcs8Pem.substring(pemHeader.length, pkcs8Pem.length - pemFooter.length);
+      // var binaryDerString = window.atob(pemContents);
+      var binaryDerString = pemToBinary(pkcs8Pem);
+      return str2ab(binaryDerString);
+    }
+
+    function str2ab(str) {
+      let buf = new ArrayBuffer(str.length);
+      let bufView = new Uint8Array(buf);
+      for (let i = 0, strLen = str.length; i < strLen; i++) {
+        bufView[i] = str.charCodeAt(i);
+      }
+      return buf;
+    }
+
+    function pemToBinary(pem) {
+      let prtTrim, prt, prts = pem.split('\n');
+      let encd = '', idx = 0, len = prts.length;
+      while (idx < len) {
+        prt = prts[idx];
+        prtTrim = prt.trim();
+        if (prtTrim.length > 0 && prt.indexOf('-BEGIN ') < 0 && prt.indexOf('-END ') < 0) encd = (encd + prtTrim);
+        idx = (idx + 1);
+      }
+      return atob(encd);
+    }
+
+    async function digestMessage(message) {
+      const msgUint8 = new TextEncoder().encode(message);                           // encode as (utf-8) Uint8Array
+      const hashBuffer = await crypto.subtle.digest('SHA-256', msgUint8);           // hash the message
+      const hashArray = Array.from(new Uint8Array(hashBuffer));                     // convert buffer to byte array
+      const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join(''); // convert bytes to hex string
+
+      return hashHex;
+    }
+
+    async function encrypt(publicKey) {
+      let te = new TextEncoder('utf-8');
+      const msg = objToQueryString(query_params);
+      let msgEncoded = te.encode(msg);
+      let msgBuf = await window.crypto.subtle.encrypt({ name: "RSA-OAEP" }, await importRsaKey(publicKey), msgEncoded);
+      let msgHex = btoa(String.fromCharCode(...new Uint8Array(msgBuf)));
+
+      const hash = await digestMessage('netpulse');
+      return `${hash}-${msgHex}`;
+      // axios.post('http://localhost:5000/crypto', { data });
+    }
+
+    async function decrypt(privateKey) {
+      const encrypted_data = "fxRrWtv6IJBfeVNtE68lYjWJk1rO4xv/daYE7i7MCzcJYSP2Zjtuakx/4bcgpRwbjwHAZNKE/Y6kZxe2LeCzAxg59q7u7lwOY1/oMaquou9aEkgg8q03syRCzLtlX9Jh/k5je2eg/UKXD9TBMJxIy4ERmvNGG3wNSjYU2KfeTgfThGAIRwLT/mcTrk6lRbUW9s6KK04W6D/9gj6NdUmQ7cfGX9/YRgFmZ4YG6HIotg3K+PUw9NIkwaM4mzPkrauspEgvDLmg//k0AZ/lbTPNW5Oq/7lv81isWHrzXgq4qw63TkHGOrWdyTbQYOrBnkyc7uTJJURcC3iD/DtYAKqtTeM1HYLi84jIwj6heRQXb6pYkeueLXzgE7Za7YNrtwxC5yn2VJssQdWhgxl+J1QxmwR0WLVI7LBfHdvT8OoFij8YFVOFsnMKLOda7ys1gtDEHtTzJuRcyHbZfOMpT5IYLah524gjU9zjYTNhRFI82F0D6nHftNgaw2jg793Oq3PZNABlmW+an6VAIEsBHTiywoIt0fDUTGeOcNn7iVPICLs3FDYykdHfDW4+ms+JfDkdvedwHIN154qWj9o+DGzD5fC2LR36xS1oXFW13q5jXxvlVt/zrENdx22dX7MSoPt1RLL/fH1eqarNSye8L+bmx8BDwvl/dmlxn1FKYpv+0HM=";
+      let msgBuf = await window.crypto.subtle.decrypt(
+        { name: "RSA-OAEP" },
+        await importRsaKey(privateKey),
+        encrypted_data
+      );
+      console.log(msgBuf);
+    }
+
+    async function fetch(partner_name) {
+      try {
+        const { data } = await axios.get(`http://localhost:10010/landing-page/${partner_name}`);
+        const encrypted_data = await encrypt(data.public_key);
+        console.log(encrypted_data);
+      } catch (err) {
+        console.error(err);
+      }
+    }
+
+    // encrypt();
+    // fetch('netpulse');
+    // const ciphertextB64 = "fxRrWtv6IJBfeVNtE68lYjWJk1rO4xv/daYE7i7MCzcJYSP2Zjtuakx/4bcgpRwbjwHAZNKE/Y6kZxe2LeCzAxg59q7u7lwOY1/oMaquou9aEkgg8q03syRCzLtlX9Jh/k5je2eg/UKXD9TBMJxIy4ERmvNGG3wNSjYU2KfeTgfThGAIRwLT/mcTrk6lRbUW9s6KK04W6D/9gj6NdUmQ7cfGX9/YRgFmZ4YG6HIotg3K+PUw9NIkwaM4mzPkrauspEgvDLmg//k0AZ/lbTPNW5Oq/7lv81isWHrzXgq4qw63TkHGOrWdyTbQYOrBnkyc7uTJJURcC3iD/DtYAKqtTeM1HYLi84jIwj6heRQXb6pYkeueLXzgE7Za7YNrtwxC5yn2VJssQdWhgxl+J1QxmwR0WLVI7LBfHdvT8OoFij8YFVOFsnMKLOda7ys1gtDEHtTzJuRcyHbZfOMpT5IYLah524gjU9zjYTNhRFI82F0D6nHftNgaw2jg793Oq3PZNABlmW+an6VAIEsBHTiywoIt0fDUTGeOcNn7iVPICLs3FDYykdHfDW4+ms+JfDkdvedwHIN154qWj9o+DGzD5fC2LR36xS1oXFW13q5jXxvlVt/zrENdx22dX7MSoPt1RLL/fH1eqarNSye8L+bmx8BDwvl/dmlxn1FKYpv+0HM=";
+    const ciphertextB64 = "RQO4Tx18DbCfV1nelLhasyydeFNH7wFZ/zOqrBCWsOTKYERDEJXIRSZ5NXYI7Mu4PZShkzbjHV9Gcy3dEFno6dt3Q+RfBQD2/XlR3SaBOMn2fPYC8zYZdKoZutq8rAFQZ35LZZRfXJosw8Gbxakcts1ltA9dwxnOGg4+lv3JSXeWXy7DhIEdgMS47rsiLbAwpNNx8E3aSdClZxI5ZlHuInWrPz9zPd6ZapL2b33pIENXJItIDty9Pw2ZJi1IJtUOq1ivBky7yvfqvOiEX8o9ApMtFM2FBZ28JV6bdtX9/QStNPIhABpr6VFGS05bV3bkIXFibZ9JYRNhIhUOf1qJTs4+QdB/lzpgejNUwYWnBrs1SIqxyF4yxDc4c6rGUHWaKAaLcD7e+hP2399gaxr9v8O5eZnSdbvD9WLU2Cp1cFk2W3zIwnQpPQKzEwo1WGoccITQXwtLAciKZWlHmwpsDs7cmxpgqrHunoSgZRHlR/kKw9xU5JlWga5GFz8P9K01pKCeMzr1eXyxVXuBNqImaQYs7YXFHaUHosbBDN1pjDutcluuUO/glruiDAdzXFVevIHUfRBJ0j/BJQQDe5+NLTI9bpc/FJjYqyJO5Kp5PtXszPY3LiHpHTStMC1IIB8sSpiS417lV9f2jhbkcdS9tgBHtCc2Wd1l2kel8TWV6eo=";
+    importPrivateKeyAndDecrypt(privateKey, ciphertextB64);
+
+  </script>
+</body>
+
+</html>
